@@ -1,0 +1,34 @@
+1. from playwright.async_api import async_playwright, ViewportSize
+async_playwright:
+* Вот тут происходит самое интересное. Вот что я понял, так как Jupyter Notebook используют even loop при активации любого 'блока' в коде, автоматически
+включается event loop - playwright предоставляет работу либо через sync/async. Как я и сказал возможности отключения автоматического включаения event loop в 
+jupyter notebook нет, поэтому МАКСИМУМ можно отключить его через async_nest -> .apply(), позволяет создать параллельный event loop. Поэтому придется работать с 
+async_playwright.
+ViewportSize:
+* 
+
+* we use with statement:
+to make sure that there is no memory leak, that we close properly
+file = open('file.txt, 'w')
+try: 
+	file.write('Hello world')
+finally: 
+	file.close()
+
+with open('file.txt, 'w') as file:
+	file.write("Hello world")
+
+a) the error might arrise in the fisrt example, such as it will never be close because of the exaption -> never be closed 
+
+casefold() - is similar to lower(), but casefold method is more agressive
+
+page.locator('[smth = 'smth']') - as far as I can understand it looks for a match 
+
+2. from pathlib import Path
+* The pathlib is a Python module which provides an object API for working with files and directories. 
+The pathlib is a standard module. Path is the core object to work with files.
+Path('some_path')mkdir(parents = True, exist_ok = True) - make a folder, and if there is no such, create one.
+ 
+3. from rich.progress import track
+* it will create a bar till the program is finished
+

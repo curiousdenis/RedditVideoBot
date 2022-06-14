@@ -1,0 +1,5 @@
+1. dotenv provide load_dotenv method - it will look for the file with the .env format. If no path is provided it will look in the current directory
+the .env file contain key-value pairs separated by =.
+2. os library provides functionality to work with operating system. We can use Python os module “environ” property to get the dictionary 
+of all the environment variables - which are essentially .env key-value pairs.
+3. praw a python package that allows for simple access to reddit's API

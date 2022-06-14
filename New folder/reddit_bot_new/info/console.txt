@@ -1,0 +1,6 @@
+1. rich - is actually a great tool to modify your print statement
+*console - to modify your print statement -> console.print("Denis", style = "bold")
+*markdown - we can create a markdown markdown = .... md = Markdown(markdown) console.print(md)
+*padding 
+*panel
+*text - text = Text("Denis), text.stylsize("bolde magenta", 0,6), console.print(text)
